@@ -1,0 +1,37 @@
+@import "./styles/normalize.css";
+@import "./styles/styles.css";
+
+@import "./styles/adminPanel.css";
+@import "./styles/adminPanelMedia.css";
+
+@import "./styles/profileBlock.css";
+
+@import "./styles/valueBlock.css";
+
+@import './styles/jsElements.css';
+
+.block {
+  background-color: white;
+  border-radius: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 10px 10px;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 1) 10px 10px;
+  }
+}
+
+.upper-index {
+  z-index: 1;
+}
+
+.invisible-beauty {
+  background-color: #3182ce;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
