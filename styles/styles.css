@@ -9,6 +9,10 @@ main {
   height: 85%;
 }
 
+* {
+  cursor: default;
+}
+
 .content {
   display: flex;
   flex-direction: column;

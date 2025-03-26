@@ -8,7 +8,10 @@
 
 @import "./styles/valueBlock.css";
 
-@import './styles/jsElements.css';
+@import "./styles/jsElements.css";
+
+@import './styles/footer.css';
+
 
 .block {
   background-color: white;

@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  justify-content: end;
+
+  margin-right: 15px;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+  }
+
+  & a {
+    color: black;
+
+    &:visited {
+      color: black;
+    }
+
+    &:hover::before {
+      right: 0;
+    }
+
+    &::before {
+      right: 10px;
+      position: relative;
+      content: ">";
+    }
+  }
+}

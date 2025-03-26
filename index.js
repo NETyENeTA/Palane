@@ -16,6 +16,8 @@ document.getElementById("btn-skill").addEventListener("click", (e) => {
   skill.isHide = !skill.isHide;
 });
 
+document.onselectstart = new Function ("return false")
+
 // const taskList = {
 //   value: document.getElementById("task-list"),
 //   isHide: true,
