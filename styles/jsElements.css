@@ -11,6 +11,8 @@
   animation-duration: 1s;
   animation-direction: alternate;
 
+  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 20px;
+
   & h2 {
     max-width: 200px;
     box-shadow: rgba(0, 0, 0, 0.1) 5px 5px;
@@ -40,6 +42,26 @@
 
   to {
     top: -1200px;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    filter: none;
+  }
+
+  to {
+    filter: blur(10px);
+  }
+}
+
+@keyframes FadeOut {
+  from {
+    filter: blur(10px);
+  }
+
+  to {
+    filter: none;
   }
 }
 

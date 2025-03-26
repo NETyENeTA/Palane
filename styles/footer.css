@@ -4,6 +4,8 @@ footer {
 
   margin-right: 15px;
 
+  animation-duration: 1s;
+
   & ul {
     list-style: none;
     display: flex;

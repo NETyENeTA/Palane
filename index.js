@@ -1,8 +1,23 @@
+const backStage = [
+  document.getElementById("back-stage"),
+  document.getElementById("footer"),
+];
+
 const skill = {
   value: document.getElementById("skill"),
   isHide: true,
-  point1: { value: "calc(50% - 200px)", animName: "Show" },
-  point2: { value: "-1200px", animName: "Hide" },
+  point1: {
+    value: "calc(50% - 200px)",
+    animName: "Show",
+    filter: "blur(10px)",
+    additionalAnimName: "FadeIn",
+  },
+  point2: {
+    value: "-1200px",
+    animName: "Hide",
+    filter: "none",
+    additionalAnimName: "FadeOut",
+  },
 };
 
 document.getElementById("btn-skill").addEventListener("click", (e) => {
@@ -14,9 +29,14 @@ document.getElementById("btn-skill").addEventListener("click", (e) => {
   skill.value.style.top = point.value;
 
   skill.isHide = !skill.isHide;
+
+  backStage.forEach((el) => {
+    el.style.filter = point.filter;
+    el.style.animationName = point.additionalAnimName;
+  });
 });
 
-document.onselectstart = new Function ("return false")
+document.onselectstart = new Function("return false");
 
 // const taskList = {
 //   value: document.getElementById("task-list"),
